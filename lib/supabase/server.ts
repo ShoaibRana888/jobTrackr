@@ -8,6 +8,8 @@ export async function createClient() {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
+      // Tables live in the `jobtracker` schema of the shared project.
+      db: { schema: 'jobtracker' },
       cookies: {
         getAll() {
           return cookieStore.getAll()

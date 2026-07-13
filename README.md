@@ -6,14 +6,11 @@
 
 [View Live Site](https://job-trackr-gamma-lilac.vercel.app/) · Backend repo: [jobTrackr-backend](https://github.com/ShoaibRana888/jobTrackr-backend)
 
-<!--
-Desktop screenshots, 1440x900 (16:10), PNG, cropped to the app (no browser chrome).
--->
-
 | | |
 |---|---|
 | **Kanban dashboard** | ![Kanban dashboard](./screenshots/dashboard.png) |
-| **Application detail — AI match score** | ![Application detail](./screenshots/application-detail.png) |
+| **AI match score — strong match (95)** | ![AI match score, strong match](./screenshots/application-detail1.png) |
+| **AI match score — no match (0)** | ![AI match score, no match](./screenshots/application-detail2.png) |
 
 ## Overview
 
@@ -33,32 +30,6 @@ JobTrackr helps you manage a job search the way you'd manage a project: every ap
 - **Auth/DB client:** Supabase (`@supabase/ssr`, `@supabase/supabase-js`)
 - **Icons:** lucide-react
 - **Backend:** [jobTrackr-backend](https://github.com/ShoaibRana888/jobTrackr-backend) — FastAPI + OpenAI (see that repo for the API)
-
-## Project structure
-
-```
-jobTrackr/
-├── app/                # Next.js App Router routes (dashboard, application detail, auth)
-├── components/         # UI components
-├── lib/supabase/       # Supabase client setup
-├── types/              # Shared TypeScript types
-└── public/
-```
-
-## Getting started
-
-```bash
-git clone https://github.com/ShoaibRana888/jobTrackr.git && cd jobTrackr
-npm install
-```
-
-Create `.env.local` with your Supabase project and the backend API URL (see `lib/supabase/` for how the client is configured), then:
-
-```bash
-npm run dev   # → http://localhost:3000
-```
-
-Requires the [jobTrackr-backend](https://github.com/ShoaibRana888/jobTrackr-backend) API running (locally or deployed) for match-scoring and cover-letter generation to work.
 
 ## Contact
 
